@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="ChatSocks.customs.newAccountSetUp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChatSocks.customs"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="250" >
+    <Border CornerRadius="10" Background="#FF571B65">
+        <Grid>
+            <Border Name="ipBox" Height="30" Width="240" Background="#FFCBCBCB" CornerRadius="8" VerticalAlignment="Top" Margin="0,10,0,0" >
+                <Grid>
+                    <Image Source="/ChatSocks;component/art/quill-circle.png" Width="20" HorizontalAlignment="Left" Margin="5,0,0,0" Opacity="0.8"  />
+                    <TextBox  Name="ipadress" Text="ip adress" GotFocus="ipadress_GotFocus" Margin="35,0,0,0" Background="Transparent" FontSize="16" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto" Padding="5,0,0,0" />
+
+                </Grid>
+            </Border>
+            <Border Name="portBox" Height="30" Width="150" Background="#FFCBCBCB" CornerRadius="8" VerticalAlignment="Top" Margin="5,50,0,0"  HorizontalAlignment="Left">
+                <Grid>
+                    <Image Source="/ChatSocks;component/art/cog-double-3.png" Width="25" HorizontalAlignment="Left" Margin="5,0,0,0" Opacity="0.8"  />
+                    <TextBox  Name="port" Text="port" Margin="35,0,0,0" GotFocus="port_GotFocus" Background="Transparent" FontSize="16" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto" Padding="5,0,0,0" />
+                </Grid>
+            </Border>
+            <Border Name="addButton" Height="30" Width="80" Background="#FF54267D" CornerRadius="5" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="160,30,0,0">
+            <Grid>
+                <Label Content="add" MouseDown="Label_MouseDown" FontSize="12" HorizontalContentAlignment="Center" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto"  />
+            </Grid>
+        </Border>
+        </Grid>
+    </Border>
+</UserControl>

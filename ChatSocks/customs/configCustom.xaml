@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="ChatSocks.customs.configCustom"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChatSocks.customs"
+             mc:Ignorable="d" 
+             d:DesignHeight="220" Width="220">
+    <Border CornerRadius="15" Background="#FF571B65" Height="220">
+        <Grid>
+            <Border Name="usernameBox" Height="40" Width="200" Background="#FFCBCBCB" CornerRadius="8" VerticalAlignment="Top" Margin="0,20,0,0" >
+                <Grid>
+                    <Image Source="/ChatSocks;component/art/face-id-5.png" Width="25" HorizontalAlignment="Left" Margin="5,0,0,0" Opacity="0.8"  />
+                    <TextBox Name="username" GotFocus="username_GotFocus" Text="username" Margin="35,0,0,0" Background="Transparent" FontSize="16" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto" Padding="5,0,0,0" />
+                </Grid>
+            </Border>
+            <Border Name="ipBox" Height="40" Width="200" Background="#FFCBCBCB" CornerRadius="8" VerticalAlignment="Top" Margin="0,70,0,0" >
+                <Grid>
+                    <Image Source="/ChatSocks;component/art/quill-circle.png" Width="25" HorizontalAlignment="Left" Margin="5,0,0,0" Opacity="0.8"  />
+                    <TextBox  Name="ipadress"  GotFocus="ipadress_GotFocus" Text="127.0.0.1 (default)" Margin="35,0,0,0" Background="Transparent" FontSize="16" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto" Padding="5,0,0,0" />
+                </Grid>
+            </Border>
+            <Border Name="portBox" Height="40" Width="150" Background="#FFCBCBCB" CornerRadius="8" VerticalAlignment="Top" Margin="20,120,0,0"  HorizontalAlignment="Left">
+                <Grid>
+                    <Image Source="/ChatSocks;component/art/cog-double-3.png" Width="25" HorizontalAlignment="Left" Margin="5,0,0,0" Opacity="0.8"  />
+                    <TextBox  Name="port"  GotFocus="port_GotFocus" Text="893 (port)" Margin="35,0,0,0" Background="Transparent" FontSize="16" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto" Padding="5,0,0,0" />
+                </Grid>
+            </Border>
+            <Border Name="loginBox" Height="30" Width="90" Background="#FF54267D" CornerRadius="5" VerticalAlignment="Top" Margin="20,170,0,0"  HorizontalAlignment="Left">
+                <Grid>
+                    <Label Content="log" MouseDown="Label_MouseDown"  FontSize="12" HorizontalContentAlignment="Center" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto"  />
+                </Grid>
+            </Border>
+            <Border Name="cancelBox" MouseDown="cancelBox_MouseDown" Height="30" Width="90" Background="#FF321779" CornerRadius="5" VerticalAlignment="Top" Margin="120,170,0,0"  HorizontalAlignment="Left">
+                <Grid>
+                    <Label Content="cancel" Background="Transparent" FontSize="12" HorizontalContentAlignment="Center" BorderThickness="0,0,0,0" Foreground="Gray" VerticalContentAlignment="Center" FontFamily="Roboto"  />
+                </Grid>
+            </Border>
+            <Image HorizontalAlignment="Left" Height="100" Margin="155,30,0,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
+    </Border>
+</UserControl>
